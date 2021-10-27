@@ -3,15 +3,16 @@ import { Component } from 'react';
 
 
 
-// class User extends Component {
+class User extends Component {
 
-//   render {
-//     return
-//   }
-// }
+  render() {
+    return <li className={classes.user}>{this.props.name}</li>;
+  }
+}
 
-const User = (props) => {
-  return <li className={classes.user}>{props.name}</li>;
-};
+
+// const User = (props) => {
+//   return <li className={classes.user}>{props.name}</li>;
+// };
 
 export default User;
