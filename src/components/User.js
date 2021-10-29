@@ -5,6 +5,10 @@ import { Component } from 'react';
 
 class User extends Component {
 
+  componentWillUnmount() {
+    console.log("User is unmounted");
+  }
+
   render() {
     return <li className={classes.user}>{this.props.name}</li>;
   }
