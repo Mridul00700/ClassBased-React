@@ -23,6 +23,12 @@ class Users extends Component {
     });  // here the object passed will not override the original state, it will merge the object with the old state.
   }
 
+  componentDidUpdate() {
+    if (this.props.users.length === 0) {
+      throw new Error("No Users Found!")
+    }
+  }
+
 
 
   render() {
